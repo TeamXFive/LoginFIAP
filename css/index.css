@@ -1,0 +1,35 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mt-5 {
+    margin: 0 !important;
+    padding: 3%;
+    border: solid 1px rgb(235, 235, 235);
+    border-radius: .25em;
+    box-shadow: rgb(235, 235, 235) 0px 0px 5px;
+}
+
+figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    text-align: center;
+}
+
+.opcoes-esqueci-esqueci {
+    color: rgb(125, 125, 125);
+}
+.opcoes-esqueci-links a {
+    color: black;
+}
+
+.fs-criar-login-text a {
+    color: rgb(13, 202, 240);
+}
