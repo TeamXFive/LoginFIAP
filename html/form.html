@@ -12,23 +12,27 @@
 </head>
 <body>
     <main class="container mt-5">
-        <h3 class=""criacao-login>Criação de Login</h3>
-        <form>
+        <h3 class="criacao-login">Criação de Login</h3>
+        <form class="needs-validation" novalidate>
             <fieldset class="mb-3">
                 <label for="idUsuario" class="form-label">Usuário:</label>
-                <input type="usuario" class="form-control" id="idUsuario">
+                <input type="text" class="form-control" id="idUsuario" required>
+                <div class="invalid-feedback">Por favor, insira um nome de usuário.</div>
             </fieldset>
             <fieldset class="mb-3">
                 <label for="idSenha" class="form-label">Senha:</label>
-                <input type="usuario" class="form-control" id="idSenha">
+                <input type="password" class="form-control" id="idSenha" required>
+                <div class="invalid-feedback">Por favor, insira sua senha.</div>
             </fieldset>
             <fieldset class="mb-3">
                 <label for="idConfirmacaoSenha" class="form-label">Confirmação Senha:</label>
-                <input type="usuario" class="form-control" id="idConfirmacaoSenha">
+                <input type="password" class="form-control" id="idConfirmacaoSenha" required>
+                <div class="invalid-feedback">Por favor, confirme sua senha.</div>
             </fieldset>
             <fieldset class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                 <label class="form-check-label" for="exampleCheck1">Eu concordo com os termos de aceite</label>
+                <div class="invalid-feedback">Aceite os termos para continuar.</div>
             </fieldset>
             <fieldset class="fs-login mb-3">
                 <button type="submit" class="btn btn-primary">Enviar</button>
@@ -40,5 +44,6 @@
 
 <!-----===| Bootstrap JS |===----->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/form.js"></script>
 
 </html>
